@@ -1,0 +1,9 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a repository, git adds a .git file that contains all the meta-data for the repository.  You need to have git installed.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is a place where you can think about and arrange what you
+want to include in a commit.  It forces you to think about the commit a bit
+more.
