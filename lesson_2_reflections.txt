@@ -7,3 +7,42 @@ How is the staging area different from the working directory and the repository?
 The staging area is a place where you can think about and arrange what you
 want to include in a commit.  It forces you to think about the commit a bit
 more.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can use git diff to see the differences between your working directory
+and your staging area.  This will show you which changes have been made since
+your last commit.  This will allow you to add only one logical change at a
+time instead of every change you've made.  If more than one change has been
+made, you can commit each change separately.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Let's say I'm making an app that let's people guess something over and over.
+It has a sign in page and a main page where people guess and it displays 
+who is correct.  Then let's say I want to create a multi-player version.
+This is going to take a while and there is going to be a significant amount
+of code that might break the other code.  I could make a branch called
+"multi_player" that would be separate from the "master" branch.
+
+How do the diagrams help you visualize the branch structure?
+
+They show a traceable path forward and backward that helps you think about
+git commits like you are walking along a path, which is a visceral analogy.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When two branches are merged together, three files are considered: the
+first file to be merged, the second file to be merged, and the most
+recent common parent of both files.  If a line of code is in the parent and
+in both merge files, it is included.  If a line of code is in the parent but
+not in either merge file, it is not included. If a line of code is in the
+parent but not in one of the two merge files, it is removed.  If a line
+of code is not in the parent but is in one of the two merge files, it is
+added.  If a line of code is not in the parent and in both merge files,
+it is added.  If a line of code is not in the parent and not in either
+of the two merge files, it is not included.
+
+It is represented as the tip of both merged branches branching forward
+to a common node, effectively creating one new branch.  All of the commits
+for both branches are included in the visibility of the new, merged branch.
