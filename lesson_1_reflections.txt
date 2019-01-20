@@ -1,0 +1,58 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+The diff showed me each "block" of code that had a difference in it
+as well as which lines within the block that were actually different.
+They used a minus sign in front of lines in the original that weren't
+exactly the same as the lines in new and they used plus signs in front of
+lines in the new that replaced the lines in the old that were changed.
+
+This helped me see the changes quickly without having to search the whole
+document.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+If bug's get too deeply embedded and can't be corrected, you can go back to
+earlier versions.  If you, or a co-worker, accidentally deletes a large
+swath of code, you could go back to before the accident.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Humans are better at determining when a logical, executable version should
+be saved.  The simple, one sentence description makes it readable
+by other humans and the id numbers, author name, etc. make it easy
+to automate uniqueness and computer reference for inputing and searching.
+
+I don't see many cons to it.  As long as the person becomes habituated
+to the commiting at the right time.
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Because the files in a repository are interconnected, with code in one having
+a serious operational effect on the functionality of the other.
+
+How can you use the commands git log and git diff to view the history of files?
+
+The git log command shows all previous commits to the repository that you are
+in.  It shows the commit number, the date, the author, and the human-entered
+message.  It has additional commands that allow you to see these commits
+with more or less information, such as --stat to see the insertions and
+deletions.
+
+The git diff command allows you to see the differences between two files. 
+You enter "git diff" and then the two commit codes separated by spaces.  The
+git diff command shows each inserted line and each added line embedded
+within the context of where the line is found.
+
+How might using version control make you more confident to make changes that could break something?
+
+Once you've committed, you know you can free wheel and always be
+able to go back to the latest version that worked.  It's like a
+safety net.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to use git to download course material for the Udacity course on
+servers.  I also want to use git to manipulate the code in Fill and to
+start coding for all the other technologies I will be making.
