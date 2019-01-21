@@ -31,12 +31,23 @@ commit tree.
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+It gives you a clean way to continue to use the normal git commands to check
+for differences between your files and the last known origin file.  It also
+provides a logical workflow that uses legacy git commands to merge
+collaborative versions.
+
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+I would share the code via a google drive or through email.  At first, it
+would be easier to be sure your changes were manually checked out by you and
+that your local code was managed using familiar techniques like file
+management and copy and paste.  In the end, it would likely be harder
+because git allows everyone to update code from the terminal, which is
+much faster.
+
+
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
