@@ -7,17 +7,26 @@ and then pull it to my machine.
 
 
 
-
-
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+You might not want other people's developments on your computer.  Also,
+you might not want the main version if you are working on an experimental
+feature.
+
+
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+You can clone a repository from GitHub to your own computer.  You can also
+clone a repository from your own computer to another location on your
+own computer.  A fork clones a GitHub repository to another location on
+the GitHub servers and saves it as a new repository that is owned by the
+forker.  A branch is a commit that starts a new label and branch of the
+commit tree.
+
+
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
