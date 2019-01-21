@@ -2,7 +2,8 @@ When would you want to use a remote repository rather than keeping all your work
 local?
 
 I could access the code from any computer.  I could also collaborate on the 
-code with others and have them push and pull.
+code with others and have them push and pull.  I could also edit the code online
+and then pull it to my machine.
 
 
 
