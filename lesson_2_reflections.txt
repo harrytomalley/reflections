@@ -46,3 +46,11 @@ of the two merge files, it is not included.
 It is represented as the tip of both merged branches branching forward
 to a common node, effectively creating one new branch.  All of the commits
 for both branches are included in the visibility of the new, merged branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+It is nice that git will try to merge your files automatically.  It still takes some figuring on your part to try to make sure that git will do it right.
+You really have to understand the merging method so that you know when to use
+it and what it will do when you do merge it.  The documentation for errors is
+nice, too.  The inclusion of both people's codes with the common ancestors
+helps identify what should be done to properly merge both.
